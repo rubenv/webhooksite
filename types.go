@@ -21,6 +21,9 @@ type Token struct {
 	PremiumExpiresAt   string      `json:"premium_expires_at"`
 	CreatedAt          string      `json:"created_at"`
 	UpdatedAt          string      `json:"updated_at"`
+
+	// Filled by Client, can be used to call the webhook
+	URL string `json:"-"`
 }
 
 type Requests struct {

@@ -23,7 +23,7 @@ c := webhooksite.New()
 token, err := c.CreateToken()
 
 // Do a webhook call
-// curl https://webhook.site/{{ token.UUID }}
+// curl {{ token.URL }}
 
 // Fetch the requests
 reqs, err := c.GetRequests(token.UUID)

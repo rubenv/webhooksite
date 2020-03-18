@@ -63,6 +63,8 @@ func (c *Client) CreateTokenWithOptions(opts TokenOptions) (*Token, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	r.URL = c.url(r.UUID)
 	return r, nil
 }
 

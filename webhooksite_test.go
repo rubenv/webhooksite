@@ -1,7 +1,6 @@
 package webhooksite
 
 import (
-	"fmt"
 	"net/http"
 	"testing"
 )
@@ -42,7 +41,7 @@ func TestWebhooks(t *testing.T) {
 	hasLen(t, reqs.Data, 0)
 
 	// Do a webhook call
-	resp, err := http.Get(c.url(fmt.Sprintf("/%s", token.UUID)))
+	resp, err := http.Get(token.URL)
 	noError(t, err)
 	if resp.StatusCode != http.StatusOK {
 		t.Fail()
