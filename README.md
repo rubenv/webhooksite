@@ -11,6 +11,7 @@ Features:
 
 * Create tokens, inspect results
 * Can be configured to use a self-hosted webhook.site instance
+* Zero dependencies!
 
 ## Usage
 
