@@ -1,11 +1,13 @@
 // Simple library to test webhook calls, ideal for testing callbacks in a CI
 // server that doesn't accept calls from the outside world.
 //
-//.Features:
+// Features:
 //
-// * Create tokens, inspect results
-// * Can be configured to use a self-hosted webhook.site instance
-// * Zero dependencies!
+// - Create tokens, inspect results
+//
+// - Can be configured to use a self-hosted webhook.site instance
+//
+// - Zero dependencies!
 package webhooksite
 
 import (
